@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,8 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App-link {
+  color: rgba(238, 240, 235, 0.955);
 }
