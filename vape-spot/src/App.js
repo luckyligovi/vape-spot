@@ -5,21 +5,21 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-import { ThemeProvider } from "@mui/material/styles";
-import customTheme from "./customTheme"; // Import your custom theme
+// import { ThemeProvider } from "@mui/material/styles";
+// import customTheme from "./customTheme"; // Import your custom theme
 
 function App() {
   return (
     <Router>
-      <ThemeProvider theme={customTheme}>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/sevices" component={Services} />
-      </Routes>
-      </ThemeProvider>
+      {/* <ThemeProvider theme={customTheme}> */}
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      {/* </ThemeProvider> */}
     </Router>
   );
 }
