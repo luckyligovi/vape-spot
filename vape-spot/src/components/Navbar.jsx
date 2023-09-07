@@ -8,12 +8,17 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Button from "@mui/material/Button"; // Import Button directly
+import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
+import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
 
 function Navbar() {
   return (
     <div className="navBar">
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ height: 70, backgroundColor: "transparent", color: "inherit"}}>
+        <AppBar
+          position="static"
+          sx={{ height: 80, backgroundColor: "transparent", color: "inherit" }}
+        >
           <Toolbar variant="dense">
             <IconButton edge="start" aria-label="menu" sx={{ mr: 2 }}>
               <MenuIcon sx={{ color: "white" }} />
@@ -35,9 +40,10 @@ function Navbar() {
               </Typography>
             </IconButton>
 
-            {/* <div sx={{ flexGrow: 1, textAlign: "right", color: "white", marginLeft: "auto"  }}> */}
-            <div style={{ marginLeft: "auto" }}>
-              <Button sx={{ margin: 1 }} color="secondary">
+            <h3>vape-spot</h3>
+
+            <div  className="rightContent-navBar" >
+              <Button sx={{ margin: 1 }} color="inherit">
                 <Link
                   to="/about"
                   style={{ textDecoration: "none", color: "inherit" }}
@@ -45,22 +51,24 @@ function Navbar() {
                   About
                 </Link>
               </Button>
-              <Button sx={{ margin: 1 }} color="secondary">
+              <IconButton sx={{ margin: 3 }} color="inherit">
+                <DirectionsRoundedIcon />
                 <Link
                   to="/services"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  Services
+                  Get Directions
                 </Link>
-              </Button>
-              <Button sx={{ margin: 1 }} color="secondary">
+              </IconButton>
+              <IconButton sx={{ margin: 1 }} color="inherit">
+                <LocalPhoneRoundedIcon />
                 <Link
                   to="/contact"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   Contact
                 </Link>
-              </Button>
+              </IconButton>
             </div>
           </Toolbar>
         </AppBar>
