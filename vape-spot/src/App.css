@@ -44,17 +44,16 @@
 .rightContent-navBar{
   margin-left: auto;
 }
-
+/* about/footer style */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color :transparent;
+  color: inherit;
   padding: 20px;
   /* display: flex;
   justify-content: space-around; */
 }
 
 .about-section {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -66,6 +65,23 @@
 
 .footer-item{
   order: 1;
+  font-weight: 100;
 }
 
+/* home styles */
+ .products-content{
+  text-align: center;
+ 
+  
+ }
 
+.card-container{
+  display: flex;
+  flex-direction: row  ;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  align-content: center;
+
+}
