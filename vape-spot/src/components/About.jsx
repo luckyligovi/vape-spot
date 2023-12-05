@@ -2,7 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <footer className="footer">
+    <footer className="footer"> 
+    
+    <hr></hr>
       <div className="about-section">
         <div className="footer-item">
           <h1>Contact</h1>

@@ -6,16 +6,19 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import About from "./About";
+import exp from "./image/b.jpg"
 
 export default function Home() {
   return (
     <div className="products-content">
       <h1>vape-spot.ke</h1>
+      
+    
       <div className="card-container">
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -36,7 +39,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -57,7 +60,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -78,7 +81,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -99,7 +102,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -120,7 +123,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -141,7 +144,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -162,7 +165,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -183,7 +186,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -204,7 +207,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>
@@ -225,7 +228,7 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={exp}
             title="green iguana"
           />
           <CardContent>

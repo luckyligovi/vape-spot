@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Map } from '@googlemaps/react-wrapper';
 
-function Services() {
+
+
+function Services  () {
   return (
-    <div>Services</div>
-  )
-}
+    <div>
+    <p>working on it</p>
+  </div>
+    
+  );
+};
+
 
 export default Services

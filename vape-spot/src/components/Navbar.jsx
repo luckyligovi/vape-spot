@@ -12,6 +12,8 @@ import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
 
 function Navbar() {
+
+
   return (
     <div className="navBar">
       <Box sx={{ flexGrow: 1 }}>
@@ -35,7 +37,7 @@ function Navbar() {
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <HomeRoundedIcon />
-                  Home
+                  home
                 </Link>
               </Typography>
             </IconButton>
