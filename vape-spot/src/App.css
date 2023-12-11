@@ -14,6 +14,7 @@
   color: inherit;
   padding: 20px;
   position: relative;
+  font-family: inherit;
   /* display: flex;
   justify-content: space-around; */
 }
@@ -23,6 +24,44 @@
   margin: 20px 0; /* Adjust margin for spacing */
   width: 91pc;
 }
+/* YourComponent.css */
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+}
+
+.social-icon {
+  margin: 0 10px; /* Adjust margin as needed */
+  color: white;
+  transition: color 0.3s ease; /* Add smooth color transition on hover */
+
+  /* Add additional styles if needed */
+}
+
+.instagram {
+  color: white;
+    /* Vendor prefixes for background-clip */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.whatsapp {
+  color: white;
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  
+}
+
+.whatsapp:hover {
+  background: #00cc66; /* Change color to green on hover */
+}
+
 .about-section {
   display: flex;
   flex-direction: row;
@@ -47,21 +86,13 @@
 
   text-align: center; /* Center align the content */
   padding: 20px;
-  margin-left: 300px;
+  margin-left: 8%;
+  margin-right: 8%;
+  
   
   
  }
 
-/* .card-container{
-  display: flex;
-  flex-direction: row ;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  align-content: center;
-
-} */
 
 .card-container {
   display: flex;
