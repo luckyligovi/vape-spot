@@ -9,7 +9,66 @@ import About from "./About";
 import exp from "./image/b.jpg";
 
 const cardsData = [
-  { title: "Lizard", description: "Lizards are a widespread group...", image: exp },
+  {
+    title: "YUOTO LUSCIOUS Grape Ice",
+    description: "ksh 2000",
+    image: "https://storage.googleapis.com/vapelab/products/yuoto-luscious-grape-ice_shz.webp"
+  },
+  {
+    title: "YUOTO LUSCIOUS Grape Ice",
+    description: "YUOTO LUSCIOUS Grape Ice",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
+  {
+    title: "Lizard",
+    description: "Lizards are a widespread group...",
+    image: exp,
+  },
   // Add more card data as needed
 ];
 
@@ -21,7 +80,11 @@ const Home = () => {
       <div className="card-container">
         {cardsData.map((card, index) => (
           <Card key={index} sx={{ maxWidth: 345 }}>
-            <CardMedia sx={{ height: 140 }} image={card.image} title={card.title} />
+            <CardMedia
+              sx={{ height: 300, width: 500 }}
+              image={card.image}
+              title={card.title}
+            />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {card.title}
@@ -38,7 +101,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="line"></div>
+    
       <About />
     </div>
   );

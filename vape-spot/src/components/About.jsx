@@ -4,7 +4,7 @@ function About() {
   return (
     <footer className="footer"> 
     
-    <hr></hr>
+    <hr className="line" ></hr>
       <div className="about-section">
         <div className="footer-item">
           <h1>Contact</h1>

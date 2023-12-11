@@ -8,15 +8,21 @@
   margin-left: auto;
 }
 /* about/footer style */
+
 .footer {
   background-color :transparent;
   color: inherit;
   padding: 20px;
-  position: sticky;
+  position: relative;
   /* display: flex;
   justify-content: space-around; */
 }
 
+.line {
+  border-top: 2px solid #ccc;
+  margin: 20px 0; /* Adjust margin for spacing */
+  width: 91pc;
+}
 .about-section {
   display: flex;
   flex-direction: row;
@@ -33,23 +39,42 @@
 }
 
 /* home styles */
+.head{
+  text-align: right;
+}
+
  .products-content{
-  text-align: center;
+  /* text-align: center;
+
   width: fit-content;
   /* margin-left: 100px; */
-  margin: 10px;
+  /* margin: 10px;
+  height: 100vh; */ 
+  text-align: center; /* Center align the content */
+  padding: 20px;
+  margin-left: 300px;
+  
   
  }
 
-.card-container{
+/* .card-container{
   display: flex;
   flex-direction: row ;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px 15px;
+  gap: 15px;
   align-content: center;
 
+} */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute cards evenly */
+  gap: 70px 3px; /* Add some gap between cards */
+  max-width: 1500px; /* Set a maximum width for the card container */
 }
 
 /* navBar */
