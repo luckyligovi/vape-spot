@@ -105,7 +105,7 @@ const Home = () => {
           {cardsData.map((card, index) => (
             <Card key={index} sx={{ maxWidth: 345 }}>
               <CardMedia
-                sx={{ height: 300, width: 500 }}
+                sx={{ height: 200, width: 500 }}
                 image={card.image}
                 title={card.title}
               />
@@ -125,8 +125,9 @@ const Home = () => {
           ))}
         </div>
 
-        <About />
+        
       </div>
+      <About />
     </div>
   );
 };

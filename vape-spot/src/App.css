@@ -10,40 +10,42 @@
 /* about/footer style */
 
 .footer {
-  background-color :transparent;
+  background-color: rgba(23, 22, 22, 0.991);
   color: inherit;
   padding: 20px;
   position: relative;
-  font-family: inherit;
+  font-family: 'roboto';
+
   /* display: flex;
   justify-content: space-around; */
 }
 
 .line {
   border-top: 2px solid #ccc;
-  margin: 20px 0; /* Adjust margin for spacing */
+  margin: 20px 0; 
   width: 91pc;
 }
 /* YourComponent.css */
 
 .social-media {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-
+  justify-content: center;
+  align-items: center; 
+ 
 }
 
 .social-icon {
-  margin: 0 10px; /* Adjust margin as needed */
+  margin: 0 10px; 
   color: white;
-  transition: color 0.3s ease; /* Add smooth color transition on hover */
-
-  /* Add additional styles if needed */
+  transition: color 0.3s ease;
+  border-radius: 50%;
+  background-color: rgba(30, 28, 28, 0.991);
+  
 }
 
 .instagram {
   color: white;
-    /* Vendor prefixes for background-clip */
+    
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -59,7 +61,7 @@
 }
 
 .whatsapp:hover {
-  background: #00cc66; /* Change color to green on hover */
+  background: #00cc66;
 }
 
 .about-section {
@@ -67,9 +69,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  /* flex-direction: column; Arrange items in a column */
-  align-items: flex-start; /* Center align items horizontally */
-  /* text-align: center; Center align text */
+  
+  align-items: flex-start; 
+  
 }
 
 .footer-item{
@@ -84,12 +86,10 @@
 
  .products-content{
 
-  text-align: center; /* Center align the content */
+  text-align: center; 
   padding: 20px;
   margin-left: 8%;
   margin-right: 8%;
-  
-  
   
  }
 
@@ -98,15 +98,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; /* Distribute cards evenly */
-  gap: 70px 3px; /* Add some gap between cards */
-  max-width: 1500px; /* Set a maximum width for the card container */
+  justify-content: flex-start; 
+  gap: 70px 30px; 
+  max-width: 1500px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* navBar */
 
 .navBar{
   margin: auto;
+  position: fixed;
+  background-color: rgba(30, 28, 28, 0.991);
+  width: 100%;
+  z-index: 999;
 }
 
 .cardContent{

@@ -41,7 +41,7 @@ function Navbar() {
                   alignItems: "center",
                 }}
               >
-                <HomeRoundedIcon sx={{ fontSize: 32 }} />
+                <HomeRoundedIcon sx={{ fontSize: 32 ,}} />
                 <Typography
                   variant="body2"
                   component="div"
@@ -65,8 +65,8 @@ function Navbar() {
                   to="/services"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <DirectionsRoundedIcon sx={{ fontSize: 28 }} />
-                  Get Directions
+                  <DirectionsRoundedIcon sx={{ fontSize: 20 }} />
+                  <span style={{ marginLeft: "5px" }}>Get Directions</span>
                 </Link>
               </IconButton>
               <IconButton sx={{ margin: 1 }} color="inherit">

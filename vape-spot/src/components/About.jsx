@@ -6,7 +6,7 @@ function About() {
   const whatsappNumber = "+254721475143";
   return (
     <footer className="footer">
-      <hr className="line"></hr>
+      
 
       <div className="social-media">
         <a
