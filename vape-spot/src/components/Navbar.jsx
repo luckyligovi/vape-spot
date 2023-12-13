@@ -9,11 +9,12 @@ import IconButton from "@mui/material/IconButton";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
+import exp from "./image/vape-logo.png";
 
 function Navbar() {
   return (
     <div className="navBar">
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, padding: 0, margin: 0, }}>
         <AppBar
           position="sticky"
           sx={{
@@ -24,12 +25,12 @@ function Navbar() {
           }}
         >
           <Toolbar
+            className="toolBar"
             variant="dense"
-            sx={{ marginLeft: "250px", marginRight: "250px" }}
+            sx={{ marginLeft: "100px", marginRight: "100px" }}
           >
-          
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-              <IconButton
+              {/* <IconButton
                 edge="start"
                 color="inherit"
                 aria-label="home"
@@ -40,17 +41,31 @@ function Navbar() {
                   flexDirection: "column",
                   alignItems: "center",
                 }}
-              >
-                <HomeRoundedIcon sx={{ fontSize: 32 ,}} />
-                <Typography
+              > */}
+              {/* <HomeRoundedIcon sx={{ fontSize: 32 }} /> */}
+              <img
+                src={exp}
+                alt="someone using vape"
+                style={{
+                  height: 50,
+                  margin: 1,
+                  mr: 2,
+                  marginBottom: 0.5,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding:10
+                }}
+              />
+              {/* <Typography
                   variant="body2"
                   component="div"
                   textAlign="center"
                   sx={{ marginTop: 1, color: "white" }}
                 >
                   Home
-                </Typography>
-              </IconButton>
+                </Typography> */}
+              {/* </IconButton> */}
             </Link>
 
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
@@ -69,7 +84,11 @@ function Navbar() {
                   <span style={{ marginLeft: "5px" }}>Get Directions</span>
                 </Link>
               </IconButton>
-              <IconButton sx={{ margin: 1 }} color="inherit">
+              <IconButton
+                className="phone-number"
+                sx={{ margin: 1 }}
+                color="inherit"
+              >
                 <Link
                   to="/contact"
                   style={{

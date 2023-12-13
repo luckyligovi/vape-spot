@@ -6,126 +6,56 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import About from "./About";
-// import exp from "./image/b.jpg";
-
-const cardsData = [
-  {
-    title: "YUOTO LUSCIOUS Grape Ice",
-    description: "ksh 2000",
-    image:
-      "https://storage.googleapis.com/vapelab/products/yuoto-luscious-grape-ice_shz.webp",
-  },
-  {
-    title: "Double Apple ISGO Bar",
-    description: "YUOTO LUSCIOUS Grape Ice",
-    image:
-      "https://storage.googleapis.com/vapelab/products/double-apple-isgo-bar.webp",
-  },
-  {
-    title: "Yuoto Grape Ice",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/yuoto-grape-ice.webp",
-  },
-  {
-    title: "KK Energy Lush Ice",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/kk-energy-lush-ice.webp",
-  },
-  {
-    title: "Strawberry Kiwi Elf Bar",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/strawberry-kiwi-elf-bar.webp",
-  },
-  {
-    title: "Blue Raspberry Nic Salt by Vintage",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp",
-  },
-  {
-    title: "KK Energy Mango Strawberry Ice 5000 Puffs",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/kk-energy-mango-strawberry-ice-3JKC2.webp",
-  },
-  {
-    title: "Purple Rain TUGBOAT ULTRA",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/purple-rain-tugboat-ultra_vAZ.webp",
-  },
-  {
-    title: "Green Apple Ice",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/offers/green-apple-ice-offer.webp",
-  },
-  {
-    title: "Cool Mint Tugboat",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/cool-mint-tugboat.webp",
-  },
-  {
-    title: "Sweet Menthol Elf Bar",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/sweet-menthol-elf-bar.webp",
-  },
-  {
-    title: "Blue Raspberry Nic Salt by Vintage",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp",
-  },
-  {
-    title: "Blue Raspberry Nic Salt by Vintage",
-    description: "Lizards are a widespread group...",
-    image:
-      "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp",
-  },
-  // Add more card data as needed
-];
+import exp from "./image/vape-logo.png";
+import CardsData from "./CardsData.json";
 
 const Home = () => {
   return (
     <div>
-      
       <div className="products-content">
-        {/* <h1>vape-spot.ke</h1> */}
+        {/* <h1></h1> */}
         <img
-          src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-758x379,f_auto,q_auto:best/newscms/2019_16/2827266/190418-smoker-silhouette-vape-vaping-young-smoker-ac-942p.jpg"
+          src={exp}
           alt="someone using vape"
+          style={{ height: 100, paddingTop: 100 }}
         />
 
         <div className="card-container">
-          {cardsData.map((card, index) => (
-            <Card key={index} sx={{ maxWidth: 345 }}>
+          {CardsData.map((card, index) => (
+            <Card className="card" key={index} sx={{ maxWidth: 345, backgroundColor:'#191919' }}>
               <CardMedia
                 sx={{ height: 200, width: 500 }}
                 image={card.image}
                 title={card.title}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h9" color= 'white' component="div">
                   {card.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="div" color="white">
                   {card.description}
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">buy</Button>
-                <Button size="small">Learn More</Button>
+                <Button
+                  sx={{
+                    // border: "2px solid #0c0b0b;",
+                    backgroundColor: "rgba(30, 28, 28, 0.991)",
+                    color: 'rgba(234, 242, 242, 0.935)',
+                    '&:hover': {
+                      backgroundColor: '', // Set hover styles to be the same as default
+                    },
+                  }}
+                  className="buy-btn"
+                  size="large"
+                >
+                  buy
+                </Button>
+                {/* <Button size="small">Learn More</Button> */}
               </CardActions>
             </Card>
           ))}
         </div>
-
-        
       </div>
       <About />
     </div>
