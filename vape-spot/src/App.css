@@ -20,21 +20,19 @@ body, html {
   font-family: 'roboto';
   margin: auto;
   width:100vw ;
-
 }
 
 .social-media {
   display: flex;
   justify-content: center;
   align-items: center; 
- 
 }
 
 .social-icon {
   margin: 0 10px; 
   color: white;
   transition: color 0.3s ease;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: rgba(30, 28, 28, 0.991);
   
 }
@@ -80,12 +78,44 @@ body, html {
   text-align: right;
 }
 
- .products-content{
+.warning{
+  margin-top: 90px;
+  font-size: medium;
+  font-family: 'roboto';
   padding: 10px;
+  display: block;
+  /* margin: 0; */
+}
+.warning h1{
+  margin: 0;
+}
+
+.categories{
+  /* styles.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+} 
+
+
+
+ .products-content{
+  padding: 80px;
   text-align: center; 
   padding: 20px;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 16%;
+  margin-right: 16%;
   
  }
 
@@ -96,16 +126,15 @@ body, html {
   display: grid;
   grid-template-columns: auto auto auto auto;;
   justify-content: space-between;
-  width: 500;
-  /* flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;  */
-  gap: 70px 30px; 
-  max-width: 1500px; 
+  gap: 1% 1%; 
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  
+  min-width: 150px;
+  text-size-adjust:100% ;
 }
+
+
 /* .buy-btn{
   border: 2px solid #0c0b0b;
   background-color: rgba(30, 28, 28, 0.991);
@@ -117,7 +146,6 @@ body, html {
   border: 2px solid #0c0b0b;
   background-color: rgba(30, 28, 28, 0.991);
   /* width: 300px;  */
-  margin: auto; 
   color: rgba(234, 242, 242, 0.935);
   text-align: center;
 }
@@ -178,18 +206,27 @@ body, html {
     font-size: 14px;
     /* margin: 5px */
   }
+
+  .products-content{
+    margin: 0;
+  }
   .card-container  {
     grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
   }
-
-
-  /* .card {
-    width: 100px;
+  .categories .MuiImageList-root{
+    flex-wrap: wrap;
+  }
+  
+  .card-container .MuiCard-root {
+  }
+  .card-container .MuiCardMedia-root{
     height: 200px;
-  } */
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .navBar .toolBar {
     margin-left: auto;
     margin-right: auto;

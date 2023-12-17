@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 // import MenuIcon from "@mui/icons-material/Menu";
-import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+// import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
 import exp from "./image/vape-logo.png";
@@ -75,7 +75,7 @@ function Navbar() {
             </Typography>
 
             <div className="rightContent-navBar">
-              <IconButton sx={{ margin: 3 }} color="inherit">
+              {/* <IconButton sx={{ margin: 3 }} color="inherit">
                 <Link
                   to="/services"
                   style={{ textDecoration: "none", color: "inherit" }}
@@ -83,7 +83,7 @@ function Navbar() {
                   <DirectionsRoundedIcon sx={{ fontSize: 20 }} />
                   <span style={{ marginLeft: "5px" }}>Get Directions</span>
                 </Link>
-              </IconButton>
+              </IconButton> */}
               <IconButton
                 className="phone-number"
                 sx={{ margin: 1 }}

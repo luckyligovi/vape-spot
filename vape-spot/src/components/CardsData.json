@@ -1,68 +1,87 @@
 [
-    {
-      "title": "YUOTO LUSCIOUS Grape Ice",
-      "description": "ksh 2000",
-      "image": "https://storage.googleapis.com/vapelab/products/yuoto-luscious-grape-ice_shz.webp"
-    },
-    {
-      "title": "Double Apple ISGO Bar",
-      "description": "YUOTO LUSCIOUS Grape Ice",
-      "image": "https://storage.googleapis.com/vapelab/products/double-apple-isgo-bar.webp"
-    },
-    {
-      "title": "Yuoto Grape Ice",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/yuoto-grape-ice.webp"
-    },
-    {
-      "title": "KK Energy Lush Ice",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/kk-energy-lush-ice.webp"
-    },
-    {
-      "title": "Strawberry Kiwi Elf Bar",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/strawberry-kiwi-elf-bar.webp"
-    },
-    {
-      "title": "Blue Raspberry Nic Salt by Vintage",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
-    },
-    {
-      "title": "KK Energy Mango Strawberry Ice 5000 Puffs",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/kk-energy-mango-strawberry-ice-3JKC2.webp"
-    },
-    {
-      "title": "Purple Rain TUGBOAT ULTRA",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/purple-rain-tugboat-ultra_vAZ.webp"
-    },
-    {
-      "title": "Green Apple Ice",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/offers/green-apple-ice-offer.webp"
-    },
-    {
-      "title": "Cool Mint Tugboat",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/cool-mint-tugboat.webp"
-    },
-    {
-      "title": "Sweet Menthol Elf Bar",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/sweet-menthol-elf-bar.webp"
-    },
-    {
-      "title": "Blue Raspberry Nic Salt by Vintage",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
-    },
-    {
-      "title": "Blue Raspberry Nic Salt by Vintage",
-      "description": "Lizards are a widespread group...",
-      "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
-    }
-  ]
-  
+  {
+    "title": "YUOTO LUSCIOUS Grape Ice",
+    "price": "ksh 2,000",
+    "image": "https://storage.googleapis.com/vapelab/products/yuoto-luscious-grape-ice_shz.webp"
+  },
+  {
+    "title": "Double Apple ISGO Bar",
+    "price": "ksh 1,500",
+    "image": "https://storage.googleapis.com/vapelab/products/double-apple-isgo-bar.webp"
+  },
+  {
+    "title": "Yuoto Grape Ice",
+    "price": "ksh 2000",
+    "image": "https://storage.googleapis.com/vapelab/products/yuoto-grape-ice.webp"
+  },
+  {
+    "title": "KK Energy Lush Ice",
+    "price": "ksh 2000",
+    "image": "https://storage.googleapis.com/vapelab/products/kk-energy-lush-ice.webp"
+  },
+  {
+    "title": "Strawberry Kiwi Elf Bar",
+    "price": "ksh 2,000",
+    "image": "https://storage.googleapis.com/vapelab/products/strawberry-kiwi-elf-bar.webp"
+  },
+  {
+    "title": "Blue Raspberry Nic Salt by Vintage",
+    "price": "ksh 2,000",
+    "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
+  },
+  {
+    "title": "KK Energy Mango Strawberry Ice 5000 Puffs",
+    "price": "ksh 2000",
+    "image": "https://storage.googleapis.com/vapelab/products/kk-energy-mango-strawberry-ice-3JKC2.webp"
+  },
+  {
+    "title": "Purple Rain TUGBOAT ULTRA",
+    "price": "ksh 2,000",
+    "image": "https://storage.googleapis.com/vapelab/products/purple-rain-tugboat-ultra_vAZ.webp"
+  },
+  {
+    "title": "Green Apple Ice",
+    "price": "ksh 1,000",
+    "image": "https://storage.googleapis.com/vapelab/offers/green-apple-ice-offer.webp"
+  },
+  {
+    "title": "Cool Mint Tugboat",
+    "price": "ksh 2,500",
+    "image": "https://storage.googleapis.com/vapelab/products/cool-mint-tugboat.webp"
+  },
+  {
+    "title": "Sweet Menthol Elf Bar",
+    "price": "ksh 800",
+    "image": "https://storage.googleapis.com/vapelab/products/sweet-menthol-elf-bar.webp"
+  },
+  {
+    "title": "Blue Raspberry Nic Salt by Vintage",
+    "price": "ksh 2,100",
+    "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
+  },
+  {
+    "title": "Blue Raspberry Nic Salt by Vintage",
+    "price": "ksh 1,200",
+    "image": "https://storage.googleapis.com/vapelab/products/blue-raspberry-nic-salt-by-vintage.webp"
+  },
+  {
+    "categories": [
+      {
+        "name": "disposables",
+        "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/disposable2.jpg?w=1000&ssl=1"
+      },
+      {
+        "name": "E-liquids",
+        "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/E-Liquids.jpg?resize=1024%2C683&ssl=1"
+      },
+      {
+        "name": "Pod devices",
+        "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/pod-devices.jpg?resize=1024%2C683&ssl=1"
+      },
+      {
+        "name": "Vape Kits",
+        "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/vape-kits.jpg?w=480&ssl=1"
+      }
+    ]
+  }
+]
