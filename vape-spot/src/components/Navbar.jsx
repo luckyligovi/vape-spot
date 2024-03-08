@@ -8,7 +8,7 @@ import IconButton from "@mui/material/IconButton";
 // import MenuIcon from "@mui/icons-material/Menu";
 // import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
-import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
+// import DirectionsRoundedIcon from "@mui/icons-material/DirectionsRounded";
 import exp from "./image/vape-logo.png";
 
 function Navbar() {

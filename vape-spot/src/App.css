@@ -219,8 +219,8 @@ body, html {
     flex-wrap: wrap;
   }
   
-  .card-container .MuiCard-root {
-  }
+  /* .card-container .MuiCard-root {
+  } */
   .card-container .MuiCardMedia-root{
     height: 200px;
   }

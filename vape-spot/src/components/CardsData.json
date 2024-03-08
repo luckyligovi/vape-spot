@@ -66,19 +66,24 @@
   },
   {
     "categories": [
+      
       {
+        "id":1,
         "name": "disposables",
         "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/disposable2.jpg?w=1000&ssl=1"
       },
       {
+        "id":2,
         "name": "E-liquids",
         "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/E-Liquids.jpg?resize=1024%2C683&ssl=1"
       },
       {
+        "id":3,
         "name": "Pod devices",
         "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/pod-devices.jpg?resize=1024%2C683&ssl=1"
       },
       {
+        "id":4,
         "name": "Vape Kits",
         "image": "https://i0.wp.com/vapeplugkenya.com/wp-content/uploads/2023/06/vape-kits.jpg?w=480&ssl=1"
       }

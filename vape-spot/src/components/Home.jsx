@@ -9,7 +9,7 @@ import About from "./About";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-// import exp from "./image/vape-logo.png";
+import { Link } from "react-router-dom";
 import CardsData from "./CardsData.json";
 
 const Home = () => {
@@ -36,26 +36,29 @@ const Home = () => {
           >
             {CardsData[CardsData.length - 1].categories.map(
               (category, index) => (
-                <ImageListItem
-                  key={index}
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    loading="lazy"
-                    style={{ width: "80%", height: "100%" }}
-                  />
-                  <ImageListItemBar title={category.name} position="below" />
-                </ImageListItem>
+                <Link to={`/category/${category.name}`} key={index}>
+                  <ImageListItem
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    
+                    <img
+                      src={category.image}
+                      alt={category.name}
+                      loading="lazy"
+                      style={{ width: "80%", height: "100%" }}
+                    />
+                    <ImageListItemBar title={category.name} position="below" />
+                  </ImageListItem>
+                </Link>
               )
             )}
           </ImageList>
         </div>
+
         <Button
           sx={{
             // border: "2px solid #0c0b0b;",
@@ -64,11 +67,10 @@ const Home = () => {
             "&:hover": {
               backgroundColor: "", // Set hover styles to be the same as default
             },
-            textAlign:'left'
+            textAlign: "left",
           }}
           className="buy-btn"
           size="large"
-          
         >
           buy
         </Button>
