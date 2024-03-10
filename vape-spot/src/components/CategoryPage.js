@@ -24,7 +24,7 @@ export default function CategoryPage() {
                 className="card"
                 key={index}
                 sx={{
-                  maxWidth: 345,
+                  maxWidth: 340,
                   backgroundColor: "#191919",
                   fontFamily: "roboto",
                   fontSize: "medium",
@@ -61,9 +61,10 @@ export default function CategoryPage() {
                       "&:hover": {
                         backgroundColor: "",
                       },
+                      width: "100%",
                     }}
                     className="buy-btn"
-                    size="small"
+                    size="large"
                   >
                     Buy
                   </Button>

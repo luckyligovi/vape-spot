@@ -19,8 +19,8 @@ function Navbar() {
           position="sticky"
           sx={{
             height: 80,
-            backgroundColor: "transparent",
-            color: "inherit",
+            backgroundColor: "rgb(33, 33, 33)",
+            color: "white",
             // borderBottom: "1px solid #eee",
           }}
         >
@@ -30,19 +30,6 @@ function Navbar() {
             sx={{ marginLeft: "100px", marginRight: "100px" }}
           >
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-              {/* <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="home"
-                sx={{
-                  mr: 2,
-                  marginBottom: 0.5,
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              > */}
-              {/* <HomeRoundedIcon sx={{ fontSize: 32 }} /> */}
               <img
                 src={exp}
                 alt="someone using vape"
@@ -51,21 +38,9 @@ function Navbar() {
                   margin: 1,
                   mr: 2,
                   marginBottom: 0.5,
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
                   padding:10
                 }}
               />
-              {/* <Typography
-                  variant="body2"
-                  component="div"
-                  textAlign="center"
-                  sx={{ marginTop: 1, color: "white" }}
-                >
-                  Home
-                </Typography> */}
-              {/* </IconButton> */}
             </Link>
 
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
@@ -74,16 +49,7 @@ function Navbar() {
               </Link>
             </Typography>
 
-            <div className="rightContent-navBar">
-              {/* <IconButton sx={{ margin: 3 }} color="inherit">
-                <Link
-                  to="/services"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  <DirectionsRoundedIcon sx={{ fontSize: 20 }} />
-                  <span style={{ marginLeft: "5px" }}>Get Directions</span>
-                </Link>
-              </IconButton> */}
+            <Typography className="rightContent-navBar">
               <IconButton
                 className="phone-number"
                 sx={{ margin: 1 }}
@@ -102,7 +68,7 @@ function Navbar() {
                   <span style={{ marginLeft: "5px" }}>+254721475143</span>
                 </Link>
               </IconButton>
-            </div>
+            </Typography>
           </Toolbar>
         </AppBar>
       </Box>

@@ -9,6 +9,7 @@ import About from "./About";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { Paper, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import CardsData from "./CardsData.json";
 
@@ -16,15 +17,15 @@ const Home = () => {
   return (
     <div>
       <div className="products-content">
-        <div className="warning">
-          <h1>Warning: </h1>
-          <h2>
-            This product contains Nicotine.Nicotine is an addictive chemical
-          </h2>
-        </div>
+        <Paper className="warning" elevation={1}>
+          <Typography variant="h3">Warning: </Typography>
+          <Typography variant="body1" color="grey">
+            This product contains Nicotine. Nicotine is an addictive chemical
+          </Typography>
+        </Paper>
 
         <div className="categories">
-          <h1>categories</h1>
+          <Typography variant="h2" sx={{fontSize: "18", color:"#444", p: 2}}>Categories</Typography>
           <ImageList
             sx={{
               display: "flex",
@@ -32,6 +33,7 @@ const Home = () => {
               overflowX: "auto",
               width: "100%",
               gap: 10,
+              
             }}
           >
             {CardsData[CardsData.length - 1].categories.map(
@@ -49,86 +51,80 @@ const Home = () => {
                       src={category.image}
                       alt={category.name}
                       loading="lazy"
-                      style={{ width: "80%", height: "100%" }}
+                      style={{ width: "100%", height: 300 }}
                     />
-                    <ImageListItemBar title={category.name} position="below" />
+                    <ImageListItemBar title={category.name} />
                   </ImageListItem>
                 </Link>
               )
             )}
           </ImageList>
         </div>
+        <Paper elevation={1}>
+          
+          <Typography variant="h2" sx={{fontSize: "18", color:"#444",}}>Products</Typography>
+          <Grid container spacing={4} sx={{p: 3}}>
+            {CardsData.map((card, index) => (
+              <Grid item xs={12} py={2} md={6} lg={3}>
 
-        <Button
-          sx={{
-            // border: "2px solid #0c0b0b;",
-            backgroundColor: "rgba(30, 28, 28, 0.991)",
-            color: "rgba(234, 242, 242, 0.935)",
-            "&:hover": {
-              backgroundColor: "", // Set hover styles to be the same as default
-            },
-            textAlign: "left",
-          }}
-          className="buy-btn"
-          size="large"
-        >
-          buy
-        </Button>
-        <div className="card-container">
-          {CardsData.map((card, index) => (
-            <Card
-              className="card"
-              key={index}
-              sx={{
-                maxWidth: 345,
-                backgroundColor: "#191919",
-                fontFamily: "roboto",
-                fontSize: "medium",
-              }}
-              style={{ transition: "transform 0.3s", cursor: "pointer" }}
-            >
-              <CardMedia
-                sx={{ height: 300, width: "100%" }}
-                image={card.image}
-                title={card.title}
-              />
-              <CardContent sx={{ textAlign: "start" }}>
-                <Typography
-                  gutterBottom
-                  variant="h9"
-                  color="white"
-                  component="div"
-                >
-                  {card.title}
-                </Typography>
-                <Typography
-                  variant="div"
-                  color="rgba(182, 170, 11, 0.928)"
-                  sx={{ fontStyle: "italic" }}
-                >
-                  {card.price}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button
+                <Card
+                  className="card"
+                  key={index}
                   sx={{
-                    // border: "2px solid #0c0b0b;",
-                    backgroundColor: "rgba(30, 28, 28, 0.991)",
-                    color: "rgba(234, 242, 242, 0.935)",
-                    "&:hover": {
-                      backgroundColor: "", // Set hover styles to be the same as default
-                    },
+                    maxWidth: 345,
+                    backgroundColor: "#191919",
+                    fontFamily: "roboto",
+                    fontSize: "medium",
+                    maxHeight: 450,
                   }}
-                  className="buy-btn"
-                  size="small"
+                  style={{ transition: "transform 0.3s", cursor: "pointer" }}
                 >
-                  buy
-                </Button>
-                {/* <Button size="small">Learn More</Button> */}
-              </CardActions>
-            </Card>
-          ))}
-        </div>
+                  <CardMedia
+                    sx={{ height: 300, width: "100%" }}
+                    image={card.image}
+                    title={card.title}
+                  />
+                  <CardContent sx={{ textAlign: "start" }}>
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      color="#fefefe"
+                      component="div"
+                      noWrap
+                    >
+                      {card.title}
+                    </Typography>
+                    <Typography
+                      variant="h7"
+                      color="rgba(182, 170, 11, 0.928)"
+                      sx={{ fontStyle: "italic" }}
+                    >
+                      {card.price}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      sx={{
+                        // border: "2px solid #0c0b0b;",
+                        backgroundColor: "#36454F",
+                        color: "rgba(234, 242, 242, 0.935)",
+                        "&:hover": {
+                          backgroundColor: "", // Set hover styles to be the same as default
+                        },
+                        width: "100%",
+                      }}
+                      className="buy-btn"
+                      size="large"
+                    >
+                      buy
+                    </Button>
+                    {/* <Button size="small">Learn More</Button> */}
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Paper>             
       </div>
       <About />
     </div>
